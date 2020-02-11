@@ -1,4 +1,6 @@
 *{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -16,9 +18,8 @@
 }
 
 .header{
-  margin-top: 44px;
-  padding: 0;
-  padding-bottom: 120px;
+  padding: 44px 0 120px 0;
+
 }
 
 .logo img{
@@ -59,7 +60,7 @@
 /* SERVICES */
 
 .title-box{
-  padding-bottom: 76px;
+  margin-bottom: 76px;
 }
 
 .section-title{
@@ -105,8 +106,6 @@
 }
 
 .service-list{
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -129,6 +128,7 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 27px;
 }
 
 .comerce::before{
@@ -145,17 +145,15 @@
 
 
 .service-list__title__title{
-  padding: 0;
-  margin-bottom: 18;
+  display: block;
   font-size: 18px;
   font-family: "Montserrat";
   color: #222222;
   font-weight: 700;
+  margin-bottom: 27px;
 }
 
 .service-list__title__descr{
-  padding: 0;
-  margin: 0;
   font-size: 14px;
   text-align: center;
   font-family: "Montserrat";
@@ -174,11 +172,11 @@
 
 .contact{
   padding-top: 105px;
+  padding-bottom: 115px;
 }
 
 .contact{
   display: block;
-  height: 676px;
   background-color: #222;
   background-image:url('../img/map.png');
   background-position: right;
@@ -211,7 +209,8 @@
 
 
 .tall{
-  height: 209px;
+  margin: 0;
+  height: 100%;
   resize: none;
 }
 
@@ -225,13 +224,13 @@
   text-transform: uppercase;
 }
 
-.required:valid{
-  outline: 6px solid #42ff00;
+input:required:focus:valid{
+  border-bottom: 6px solid #42ff00;
 }
 
 
-.required:invalid{
-  outline: 6px solid #ff0000;
+input:required:focus:invalid{
+  border-bottom: 6px solid #ff0000;
 }
 
 
@@ -244,6 +243,7 @@
 
 .form__submit{
   display: inline-block;
+  margin: 0 auto;
   border: none;
   border-radius: 3px;
   background-color: #fed136;
@@ -254,6 +254,7 @@
   font-family: "Montserrat";
   font-weight: 700;
   color: #fff;
+  margin-top: 27px;
 }
 
 /* visually-hidden helper */
